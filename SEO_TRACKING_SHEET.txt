@@ -1,0 +1,155 @@
+📊 SEO PERFORMANCE TRACKING SHEET
+==================================
+Created: June 8, 2026
+Last Updated: [Your Date]
+
+MONTHLY TRACKING TEMPLATE
+==========================
+
+MONTH: _______________
+
+TRAFFIC METRICS:
+┌─────────────────────────────────┬──────────┬────────────┐
+│ Metric                          │ This Month│ Last Month │
+├─────────────────────────────────┼──────────┼────────────┤
+│ Total Organic Traffic           │          │            │
+│ City Pages Organic Traffic      │          │            │
+│ New Users from Organic          │          │            │
+│ Sessions                        │          │            │
+│ Average Session Duration        │          │            │
+│ Conversion Rate (%)             │          │            │
+│ Phone Calls from Organic        │          │            │
+│ WhatsApp Inquiries              │          │            │
+└─────────────────────────────────┴──────────┴────────────┘
+
+RANKING TRACKING:
+┌──────────────────────────────────┬───────┬───────────────────┐
+│ Keyword                          │ Rank  │ Search Volume/mo  │
+├──────────────────────────────────┼───────┼───────────────────┤
+│ pigeon safety nets Chennai       │       │ ~720              │
+│ pigeon nets for balcony Chennai  │       │ ~590              │
+│ pigeon safety nets Bangalore     │       │ ~680              │
+│ pigeon nets Bangalore            │       │ ~550              │
+│ pigeon safety nets Hyderabad     │       │ ~480              │
+│ pigeon nets Hyderabad            │       │ ~420              │
+│ pigeon safety nets Pune          │       │ ~390              │
+│ pigeon nets Pune                 │       │ ~320              │
+│ bird netting Chennai             │       │ ~440              │
+│ bird netting Bangalore           │       │ ~380              │
+│ invisible grills Chennai         │       │ ~290              │
+│ invisible grills Bangalore       │       │ ~260              │
+│ Anti pigeon nets Chennai         │       │ ~210              │
+│ Anti pigeon nets Bangalore       │       │ ~180              │
+│ Balcony safety nets Chennai      │       │ ~170              │
+│ Balcony safety nets Bangalore    │       │ ~150              │
+└──────────────────────────────────┴───────┴───────────────────┘
+
+GOOGLE SEARCH CONSOLE DATA:
+┌──────────────────────┬───────────┬────────┬──────────┬─────┐
+│ Page                 │ Impresss  │ Clicks │ CTR (%)  │ Pos │
+├──────────────────────┼───────────┼────────┼──────────┼─────┤
+│ /pigeon-nets-chennai │           │        │          │     │
+│ /pigeon-nets-bangalore│          │        │          │     │
+│ /pigeon-nets-hydera  │           │        │          │     │
+│ /pigeon-nets-pune    │           │        │          │     │
+└──────────────────────┴───────────┴────────┴──────────┴─────┘
+
+BACKLINKS & CITATIONS:
+┌─────────────────────────────────┬──────────┬────────────┐
+│ Source                          │ Created? │ Status     │
+├─────────────────────────────────┼──────────┼────────────┤
+│ Google My Business (Chennai)    │ ☐        │            │
+│ Google My Business (Bangalore)  │ ☐        │            │
+│ Google My Business (Hyderabad)  │ ☐        │            │
+│ Google My Business (Pune)       │ ☐        │            │
+│ Justdial                        │ ☐        │            │
+│ Urban Company                   │ ☐        │            │
+│ Local Business Listings         │ ☐        │            │
+│ Industry Directories            │ ☐        │            │
+│ Local News Coverage             │ ☐        │            │
+│ Partnership Links               │ ☐        │            │
+└─────────────────────────────────┴──────────┴────────────┘
+
+SOCIAL MEDIA & REVIEWS:
+┌─────────────────────────────────┬─────────┬────────────┐
+│ Metric                          │ Count   │ Trend      │
+├─────────────────────────────────┼─────────┼────────────┤
+│ Google Reviews (Average Rating) │     / 5 │ ↑ ↓ →      │
+│ Google Review Count             │         │ ↑ ↓ →      │
+│ Facebook Engagement Rate        │   %     │ ↑ ↓ →      │
+│ Instagram Followers             │         │ ↑ ↓ →      │
+│ YouTube Subscribers             │         │ ↑ ↓ →      │
+│ Social Media Shares of City Pages│        │ ↑ ↓ →      │
+└─────────────────────────────────┴─────────┴────────────┘
+
+TECHNICAL SEO:
+┌──────────────────────────────────┬──────────┬────────────┐
+│ Metric                           │ Status   │ Fix Needed?│
+├──────────────────────────────────┼──────────┼────────────┤
+│ Page Speed (Mobile)              │          │ ☐ Yes ☐ No │
+│ Page Speed (Desktop)             │          │ ☐ Yes ☐ No │
+│ Mobile Friendliness              │          │ ☐ Yes ☐ No │
+│ SSL Certificate Valid            │ ☐ Yes    │            │
+│ Robots.txt Accessible            │ ☐ Yes    │            │
+│ Sitemap Submitted                │ ☐ Yes    │            │
+│ Crawl Errors                     │          │ ☐ Yes ☐ No │
+│ Broken Internal Links            │          │ ☐ Yes ☐ No │
+└──────────────────────────────────┴──────────┴────────────┘
+
+CONTENT METRICS:
+┌───────────────────────────────────┬────────┬─────────────┐
+│ Content Item                      │ Status │ Views/Month │
+├───────────────────────────────────┼────────┼─────────────┤
+│ City Pages (All)                  │ ☑ Live │             │
+│ City-Specific Blog Posts          │        │             │
+│ FAQ Content                       │ ☑ Live │             │
+│ Photo Gallery                     │        │             │
+│ Customer Testimonials             │        │             │
+│ Video Content                     │        │             │
+└───────────────────────────────────┴────────┴─────────────┘
+
+LEAD GENERATION:
+┌──────────────────────────────────┬─────────┬─────────────┐
+│ Lead Source                      │ Count   │ Conversion% │
+├──────────────────────────────────┼─────────┼─────────────┤
+│ Phone Calls                      │         │       %     │
+│ WhatsApp Messages                │         │       %     │
+│ Contact Form                     │         │       %     │
+│ Google My Business                │         │       %     │
+│ Chat/Live Chat                   │         │       %     │
+│ Email Inquiries                  │         │       %     │
+│ Total Leads (Month)              │         │             │
+│ Qualified Leads                  │         │             │
+│ Converted Customers              │         │             │
+│ Customer Acquisition Cost        │ ₹       │             │
+└──────────────────────────────────┴─────────┴─────────────┘
+
+NOTES & OBSERVATIONS:
+_________________________________________________________________
+_________________________________________________________________
+_________________________________________________________________
+_________________________________________________________________
+
+ACTIONS FOR NEXT MONTH:
+☐ _________________________________________________________________
+☐ _________________________________________________________________
+☐ _________________________________________________________________
+☐ _________________________________________________________________
+
+MILESTONE GOALS:
+┌────────────────┬─────────────────┬──────────────────────────┐
+│ Timeframe      │ Goal            │ Status (M/N/A)           │
+├────────────────┼─────────────────┼──────────────────────────┤
+│ Week 1-2       │ Pages Indexed   │                          │
+│ Week 3-4       │ Start Ranking   │                          │
+│ Month 2        │ Top 10 Position │                          │
+│ Month 3        │ Top 5 Position  │                          │
+│ Month 6        │ Top 3 Position  │                          │
+│ Month 6        │ 3x Traffic      │                          │
+│ Month 6        │ 50+ Leads/Month │                          │
+└────────────────┴─────────────────┴──────────────────────────┘
+
+M = Met  |  N = Not Met  |  A = In Progress
+
+---
+Tracked By: _____________________ | Date: _____________________
