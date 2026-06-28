@@ -2,8 +2,11 @@ import React from "react";
 import GalleryGrid from "@/components/GalleryGrid";
 
 export const metadata = {
-  title: "Installation Gallery | AJ Safety Net Solutions",
-  description: "View our project photos showing pigeon safety netting, transparent balcony nets, and modern invisible grills installed across India."
+  title: "Installation Gallery | AJ Safe Net Solutions",
+  description: "View our project photos showing pigeon safety netting, transparent balcony nets, and modern invisible grills installed by AJ Safe Net Solutions.",
+  alternates: {
+    canonical: "https://www.ajsafenetsolutions.com/gallery"
+  }
 };
 
 export default function GalleryPage() {

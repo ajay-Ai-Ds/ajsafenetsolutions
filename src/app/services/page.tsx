@@ -6,8 +6,11 @@ import { services } from "@/data/services";
 import PriceTable from "@/components/PriceTable";
 
 export const metadata = {
-  title: "Our Services | Balcony Safety Nets & Invisible Grills",
-  description: "Browse our 10 safety installation services: Pigeon nets, children fall protection, anti-monkey screens, sports meshes, and SS 316 invisible grills."
+  title: "Our Services | Balcony Safety Nets & Invisible Grills | AJ Safe Net Solutions",
+  description: "Browse our 10 safety installation services: Pigeon nets, children fall protection, pet safety nets, sports meshes, and SS 316 invisible grills from AJ Safe Net Solutions.",
+  alternates: {
+    canonical: "https://www.ajsafenetsolutions.com/services"
+  }
 };
 
 export default function ServicesPage() {

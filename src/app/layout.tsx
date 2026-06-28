@@ -8,27 +8,27 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: {
-    default: "AJ Safety Net Solutions | Pigeon Nets & Invisible Grills",
-    template: "%s | AJ Safety Net Solutions"
+    default: "AJ Safe Net Solutions | Invisible Grills & Pigeon Safety Nets in Vijayawada, Chennai, Bangalore, Pune",
+    template: "%s | AJ Safe Net Solutions | Call +91 99893 91930"
   },
-  description: "India's Trusted Safety Net & Invisible Grill Experts. High-quality Garware safety nets, pigeon protection mesh, and rustproof SS 316 invisible grills installed professionally with 3-10 years warranty. Free site visit.",
-  keywords: ["Safety Nets", "Pigeon Safety Nets", "Invisible Grills", "Balcony Safety Nets", "Bird Nets Installation", "Children Safety Nets", "AJ Safety Nets", "Ajay Safety Nets"],
+  description: "Expert invisible grills & pigeon safety net installation in Vijayawada, Chennai, Bangalore & Pune. 1000+ projects, 5★ rated, SS316 grills from ₹100/sqft. Free site visit. Call Ajay: +91 99893 91930",
+  keywords: ["Safety Nets", "Pigeon Safety Nets", "Invisible Grills", "Balcony Safety Nets", "Bird Nets Installation", "Children Safety Nets", "AJ Safe Net Solutions", "Ajay Safety Nets Vijayawada"],
   metadataBase: new URL("https://www.ajsafenetsolutions.com"),
   alternates: {
     canonical: "/"
   },
   openGraph: {
-    title: "AJ Safety Net Solutions | India's Trusted Safety Net Experts",
-    description: "Get professional, long-lasting safety nets and invisible grills installed. Starting from ₹20/sqft. Call or WhatsApp for a free site assessment today.",
+    title: "AJ Safe Net Solutions | Invisible Grills & Pigeon Safety Nets in Vijayawada, Chennai, Bangalore, Pune",
+    description: "Expert invisible grills & pigeon safety net installation in Vijayawada, Chennai, Bangalore & Pune. 1000+ projects, 5★ rated, SS316 grills from ₹100/sqft. Free site visit. Call Ajay: +91 99893 91930",
     url: "https://www.ajsafenetsolutions.com",
-    siteName: "AJ Safety Net Solutions",
+    siteName: "AJ Safe Net Solutions",
     locale: "en_IN",
     type: "website"
   },
   twitter: {
     card: "summary_large_image",
-    title: "AJ Safety Net Solutions | Safety Nets & Invisible Grills",
-    description: "India's leading provider of balcony safety nets, pigeon nets, and modern invisible grills. Call +91 9989391930."
+    title: "AJ Safe Net Solutions | Safety Nets & Invisible Grills",
+    description: "Professional invisible grills & safety nets in Vijayawada, Chennai, Bangalore, Pune. Call +91 99893 91930."
   },
   icons: {
     icon: "/favicon.ico"
@@ -44,14 +44,14 @@ export default function RootLayout({
   const orgSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "AJ Safety Net Solutions",
+    "name": "AJ Safe Net Solutions",
     "url": "https://www.ajsafenetsolutions.com",
     "logo": "https://www.ajsafenetsolutions.com/images/ajslogo.webp",
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+91-9989391930",
+      "telephone": "+91-99893-91930",
       "contactType": "customer service",
-      "areaServed": "IN",
+      "areaServed": ["IN-AP", "IN-TN", "IN-KA", "IN-MH"],
       "availableLanguage": ["en", "Hindi", "Telugu", "Tamil", "Kannada"]
     }
   };
@@ -59,25 +59,38 @@ export default function RootLayout({
   const businessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "AJ Safety Net Solutions",
+    "name": "AJ Safe Net Solutions",
+    "owner": {
+      "@type": "Person",
+      "name": "Ajay"
+    },
     "image": "https://www.ajsafenetsolutions.com/images/ajslogo.webp",
     "@id": "https://www.ajsafenetsolutions.com/#localbusiness",
     "url": "https://www.ajsafenetsolutions.com",
     "telephone": "+919989391930",
     "email": "ajsafenetsolutions@gmail.com",
-    "priceRange": "$$",
+    "priceRange": "₹₹",
+    "foundingDate": "2019",
+    "numberOfEmployees": "5+",
+    "areaServed": ["Vijayawada", "Chennai", "Bangalore", "Pune"],
+    "serviceType": ["Invisible Grills", "Pigeon Safety Nets", "Balcony Safety Nets"],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "500"
+    },
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "1st Floor, Main Road, HSR Layout, Sector 2",
-      "addressLocality": "Bangalore",
-      "addressRegion": "Karnataka",
-      "postalCode": "560102",
+      "streetAddress": "Benz Circle, MG Road",
+      "addressLocality": "Vijayawada",
+      "addressRegion": "Andhra Pradesh",
+      "postalCode": "520010",
       "addressCountry": "IN"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 12.9128,
-      "longitude": 77.6388
+      "latitude": 16.5062,
+      "longitude": 80.6480
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
@@ -99,7 +112,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "WebSite",
     "url": "https://www.ajsafenetsolutions.com",
-    "name": "AJ Safety Net Solutions",
+    "name": "AJ Safe Net Solutions",
     "potentialAction": {
       "@type": "SearchAction",
       "target": {

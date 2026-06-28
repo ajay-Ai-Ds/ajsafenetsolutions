@@ -29,9 +29,12 @@ export async function generateMetadata({ params }: Props) {
   if (!service) return {};
 
   return {
-    title: `${service.name} Installation | Free Quote & Site Survey`,
-    description: `${service.tagline}. Professional installation, premium Garware HDPE materials, SS 316 invisible grills. Prices starting from ${service.priceRange}.`,
-    keywords: [service.name, `${service.name} price`, `${service.name} installation`, `best ${service.name}`, "Garware safety nets"]
+    title: `${service.name} Installation | Free Quote & Site Survey | AJ Safe Net Solutions`,
+    description: `${service.tagline}. Professional safety installation, premium Garware HDPE & SS 316 invisible grills. Prices starting from ${service.priceRange}. Call Ajay: +91 99893 91930.`,
+    keywords: [service.name, `${service.name} price`, `${service.name} installation`, `best ${service.name}`, "Garware safety nets"],
+    alternates: {
+      canonical: `https://www.ajsafenetsolutions.com/services/${service.slug}`
+    }
   };
 }
 
@@ -60,7 +63,7 @@ export default async function ServicePage({ params }: Props) {
     "description": service.shortDesc,
     "provider": {
       "@type": "LocalBusiness",
-      "name": "AJ Safety Net Solutions",
+      "name": "AJ Safe Net Solutions",
       "telephone": phone,
       "email": "ajsafenetsolutions@gmail.com"
     },

@@ -18,7 +18,7 @@ const carouselImages = [
     desc: "Modern rust-proof SS 316 cables replacing bulky metal bars. Ideal for window and balcony structures."
   },
   {
-    src: "/images/pigeon-safety-nets.webp",
+    src: "/images/bird.jpg",
     title: "Permanent Pigeon Exclusion Netting",
     tagline: "Keep Balconies Sanitary & Safe",
     desc: "UV-resistant monofilament transparent nets that exclude pigeons without blocking fresh breeze and light."

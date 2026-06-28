@@ -7,12 +7,10 @@ import { galleryItems, GalleryItem } from "@/data/gallery";
 
 const categories = [
   { slug: "all", name: "All Work" },
-  { slug: "balcony", name: "Balcony Nets" },
-  { slug: "pigeon", name: "Pigeon Control" },
   { slug: "grills", name: "Invisible Grills" },
-  { slug: "sports", name: "Sports Nets" },
-  { slug: "industrial", name: "Industrial & Ducts" },
-  { slug: "household", name: "Ceiling Hangers" }
+  { slug: "pigeon", name: "Pigeon Nets" },
+  { slug: "balcony", name: "Balcony Nets" },
+  { slug: "other", name: "Other Nets" }
 ];
 
 export default function GalleryGrid() {

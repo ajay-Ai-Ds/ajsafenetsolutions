@@ -4,8 +4,11 @@ import { MapPin, ArrowRight } from "lucide-react";
 import { cities } from "@/data/cities";
 
 export const metadata = {
-  title: "Service Coverage Cities | AJ Safety Net Solutions",
-  description: "AJ Safety Net Solutions provides professional safety net and invisible grill installation services in Bangalore, Chennai, Hyderabad, Pune, Mumbai, Visakhapatnam, Vijayawada, and other major cities in India."
+  title: "Service Coverage Cities | AJ Safe Net Solutions",
+  description: "AJ Safe Net Solutions provides professional safety net and invisible grill installation services in Vijayawada, Chennai, Bangalore, and Pune.",
+  alternates: {
+    canonical: "https://www.ajsafenetsolutions.com/cities"
+  }
 };
 
 export default function CitiesHubPage() {

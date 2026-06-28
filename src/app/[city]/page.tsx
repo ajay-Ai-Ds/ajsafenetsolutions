@@ -28,9 +28,12 @@ export async function generateMetadata({ params }: Props) {
   if (!city) return {};
 
   return {
-    title: `Pigeon Safety Nets & Invisible Grills in ${city.name} | AJ Safety Nets`,
-    description: `Professional safety net installation and invisible grills in ${city.name}. Serving ${city.areas.slice(0, 5).join(", ")} & all areas. UV-treated nets, SS 316 invisible grills. Free survey.`,
-    keywords: [`pigeon safety nets ${city.name}`, `invisible grills ${city.name}`, `balcony safety nets ${city.name}`, `bird netting ${city.name}`, `safety nets dealers ${city.name}`]
+    title: `Pigeon Safety Nets & Invisible Grills in ${city.name} | AJ Safe Net Solutions | Call +91 99893 91930`,
+    description: `Professional safety net installation and SS 316 invisible grills in ${city.name}. Serving ${city.areas.slice(0, 5).join(", ")} & all areas. Call Owner Ajay: +91 99893 91930 for free survey.`,
+    keywords: [`pigeon safety nets ${city.name}`, `invisible grills ${city.name}`, `balcony safety nets ${city.name}`, `bird netting ${city.name}`, `safety nets dealers ${city.name}`],
+    alternates: {
+      canonical: `https://www.ajsafenetsolutions.com/${city.slug}`
+    }
   };
 }
 
@@ -59,14 +62,14 @@ export default async function CityPage({ params }: Props) {
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": `AJ Safety Net Solutions ${city.name}`,
+    "name": `AJ Safe Net Solutions ${city.name}`,
     "image": "https://www.ajsafenetsolutions.com/images/ajslogo.webp",
     "telephone": phone,
     "email": "ajsafenetsolutions@gmail.com",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": city.name,
-      "addressRegion": city.name === "Bangalore" ? "Karnataka" : city.name === "Hyderabad" ? "Telangana" : city.name === "Chennai" ? "Tamil Nadu" : city.name === "Pune" || city.name === "Mumbai" ? "Maharashtra" : "IN",
+      "addressRegion": city.name === "Bangalore" ? "Karnataka" : city.name === "Chennai" ? "Tamil Nadu" : city.name === "Pune" ? "Maharashtra" : "Andhra Pradesh",
       "addressCountry": "IN"
     },
     "url": `https://www.ajsafenetsolutions.com/${city.slug}`,

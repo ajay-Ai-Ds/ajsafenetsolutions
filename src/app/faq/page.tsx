@@ -3,8 +3,11 @@ import FAQSection from "@/components/FAQSection";
 import { faqs } from "@/data/faqs";
 
 export const metadata = {
-  title: "Frequently Asked Questions | AJ Safety Net Solutions",
-  description: "Get answers to pricing, raw materials, mesh configurations, warranties, and emergency safety guidelines for safety nets and invisible grills."
+  title: "Frequently Asked Questions | AJ Safe Net Solutions",
+  description: "Get answers to pricing, raw materials, mesh configurations, warranties, and emergency safety guidelines from AJ Safe Net Solutions.",
+  alternates: {
+    canonical: "https://www.ajsafenetsolutions.com/faq"
+  }
 };
 
 export default function FAQPage() {

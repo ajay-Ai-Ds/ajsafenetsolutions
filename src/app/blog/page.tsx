@@ -5,8 +5,11 @@ import { BookOpen, Calendar, Clock, ArrowRight } from "lucide-react";
 import { blogs } from "@/data/blogs";
 
 export const metadata = {
-  title: "Safety Education Blog | AJ Safety Net Solutions",
-  description: "Read expert articles on pigeon control health risks, children balcony fall prevention guidelines, and invisible grills comparisons."
+  title: "Safety Education Blog | AJ Safe Net Solutions",
+  description: "Read expert articles on pigeon control health risks, child balcony fall prevention, and invisible grills comparisons. Get details from AJ Safe Net Solutions.",
+  alternates: {
+    canonical: "https://www.ajsafenetsolutions.com/blog"
+  }
 };
 
 export default function BlogListingPage() {

@@ -35,15 +35,21 @@ export async function generateMetadata({ params }: Props) {
   const service = getServiceBySlug(resolvedParams.service);
   if (!city || !service) return {};
 
+  const isGrill = service.slug === "invisible-grills";
+  const specText = isGrill ? "SS316 Steel" : "Garware Quality";
+
   return {
-    title: `${service.name} in ${city.name} | Expert Installation Dealers`,
-    description: `Need ${service.name.toLowerCase()} in ${city.name}? We offer premium Garware safety nets & SS 316 invisible grills across ${city.areas.slice(0, 4).join(", ")}. Free quote.`,
+    title: `${service.name} in ${city.name} | ${specText} | ${service.priceRange} | AJ Safe Net Solutions`,
+    description: `Need professional ${service.name.toLowerCase()} in ${city.name}? We offer premium materials across ${city.areas.slice(0, 4).join(", ")}. Call Owner Ajay: +91 99893 91930 for free survey.`,
     keywords: [
       `${service.name.toLowerCase()} ${city.name.toLowerCase()}`,
       `best ${service.name.toLowerCase()} in ${city.name.toLowerCase()}`,
       `${service.name.toLowerCase()} price in ${city.name.toLowerCase()}`,
       `pigeon nets ${city.name.toLowerCase()}`
-    ]
+    ],
+    alternates: {
+      canonical: `https://www.ajsafenetsolutions.com/${city.slug}/${service.slug}`
+    }
   };
 }
 
@@ -76,7 +82,7 @@ export default async function CityServicePage({ params }: Props) {
       {
         "@type": "LocalBusiness",
         "@id": `https://www.ajsafenetsolutions.com/${city.slug}/${service.slug}/#localbusiness`,
-        "name": `AJ Safety Net Solutions ${city.name}`,
+        "name": `AJ Safe Net Solutions ${city.name}`,
         "telephone": phone,
         "email": "ajsafenetsolutions@gmail.com",
         "url": `https://www.ajsafenetsolutions.com/${city.slug}`,

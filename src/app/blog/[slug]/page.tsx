@@ -24,9 +24,12 @@ export async function generateMetadata({ params }: Props) {
   if (!post) return {};
 
   return {
-    title: `${post.title} | AJ Safety Blog`,
+    title: `${post.title} | AJ Safe Net Solutions`,
     description: post.metaDesc,
-    keywords: post.keywords
+    keywords: post.keywords,
+    alternates: {
+      canonical: `https://www.ajsafenetsolutions.com/blog/${post.slug}`
+    }
   };
 }
 
@@ -36,7 +39,7 @@ export default async function BlogPostPage({ params }: Props) {
   if (!post) notFound();
 
   const phone = "+919989391930";
-  const whatsappUrl = `https://api.whatsapp.com/send?phone=${phone.replace("+", "")}&text=Hi,%20I%20read%2520your%20blog%20post%20about%20"${encodeURIComponent(post.title)}".%20Please%20contact%20me.`;
+  const whatsappUrl = `https://api.whatsapp.com/send?phone=${phone.replace("+", "")}&text=Hi,%20I%20read%20your%20blog%20post%20about%20"${encodeURIComponent(post.title)}".%20Please%20contact%2520me.`;
 
   // Get dynamic headings for Table of Contents
   const tocItems = post.sections
@@ -64,10 +67,10 @@ export default async function BlogPostPage({ params }: Props) {
     "description": post.excerpt,
     "publisher": {
       "@type": "Organization",
-      "name": "AJ Safety Net Solutions",
+      "name": "AJ Safe Net Solutions",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.ajsafenetsolutions.com/images/2.jpeg"
+        "url": "https://www.ajsafenetsolutions.com/images/ajslogo.webp"
       }
     }
   };
