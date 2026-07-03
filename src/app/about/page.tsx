@@ -4,7 +4,15 @@ import { ShieldCheck, Award, Heart, CheckSquare } from "lucide-react";
 
 export const metadata = {
   title: "About Us | AJ Safe Net Solutions",
-  description: "Learn more about AJ Safe Net Solutions, India's trusted safety net & invisible grill installer led by Ajay since 2019. 1000+ projects completed."
+  description: "Learn more about AJ Safe Net Solutions, India's trusted safety net & invisible grill installer led by Ajay since 2019. 1000+ projects completed.",
+  alternates: {
+    canonical: "https://www.ajsafenetsolutions.com/about"
+  },
+  openGraph: {
+    title: "About Us | AJ Safe Net Solutions",
+    description: "Learn more about AJ Safe Net Solutions, India's trusted safety net & invisible grill installer led by Ajay since 2019. 1000+ projects completed.",
+    url: "https://www.ajsafenetsolutions.com/about",
+  }
 };
 
 export default function About() {

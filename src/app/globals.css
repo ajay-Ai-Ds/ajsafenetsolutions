@@ -6,8 +6,8 @@
   --color-primary-light: #22c55e;
   --color-navy: #101923;
   --color-navy-light: #1f2937;
-  --font-sora: 'Sora', sans-serif;
-  --font-dmsans: 'DM Sans', sans-serif;
+  --font-sora: var(--font-sora), 'Sora', sans-serif;
+  --font-dmsans: var(--font-dmsans), 'DM Sans', sans-serif;
 }
 
 html {
@@ -49,4 +49,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .animate-fade-reveal {
   animation: fadeReveal 0.6s ease forwards;
+  will-change: transform, opacity;
 }
+

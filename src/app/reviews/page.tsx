@@ -5,7 +5,15 @@ import { reviews, getAverageRating } from "@/data/reviews";
 
 export const metadata = {
   title: "Customer Reviews | AJ Safe Net Solutions",
-  description: "Read customer ratings and testimonials for AJ Safe Net Solutions. See why we have 500+ 5-star Google reviews in Vijayawada."
+  description: "Read customer ratings and testimonials for AJ Safe Net Solutions. See why we have 500+ 5-star Google reviews in Vijayawada.",
+  alternates: {
+    canonical: "https://www.ajsafenetsolutions.com/reviews"
+  },
+  openGraph: {
+    title: "Customer Reviews | AJ Safe Net Solutions",
+    description: "Read customer ratings and testimonials for AJ Safe Net Solutions. 500+ 5-star Google reviews.",
+    url: "https://www.ajsafenetsolutions.com/reviews",
+  }
 };
 
 export default function ReviewsPage() {

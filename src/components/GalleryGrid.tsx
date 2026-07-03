@@ -32,7 +32,7 @@ export default function GalleryGrid() {
             className={`px-4 py-2 rounded-full font-semibold font-sora text-xs md:text-sm border transition-all duration-200 cursor-pointer ${
               activeTab === tab.slug
                 ? "bg-primary border-primary text-white shadow-md shadow-primary/20 scale-105"
-                : "border-gray-200 text-gray-500 hover:border-primary hover:text-primary hover:bg-green-50/10"
+                : "border-gray-200 text-gray-600 hover:border-primary hover:text-primary hover:bg-green-50/10"
             }`}
           >
             {tab.name}

@@ -4,7 +4,15 @@ import EnquiryForm from "@/components/EnquiryForm";
 
 export const metadata = {
   title: "Contact Us | AJ Safe Net Solutions",
-  description: "Get in touch with Owner Ajay for immediate safety net & invisible grill installation quotes in Vijayawada. Call +91 99893 91930."
+  description: "Get in touch with Owner Ajay for immediate safety net & invisible grill installation quotes in Vijayawada. Call +91 99893 91930.",
+  alternates: {
+    canonical: "https://www.ajsafenetsolutions.com/contact"
+  },
+  openGraph: {
+    title: "Contact Us | AJ Safe Net Solutions",
+    description: "Get in touch with Owner Ajay for immediate safety net & invisible grill installation quotes. Call +91 99893 91930.",
+    url: "https://www.ajsafenetsolutions.com/contact",
+  }
 };
 
 export default function Contact() {

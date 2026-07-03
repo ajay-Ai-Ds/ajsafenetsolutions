@@ -26,7 +26,7 @@ export default function ServicesPage() {
         <h1 className="text-2xl md:text-5xl font-extrabold font-sora text-navy mb-4">
           Safety Net & Invisible Grill Services
         </h1>
-        <p className="text-xs md:text-sm text-gray-500">
+        <p className="text-xs md:text-sm text-gray-600">
           From balcony fall barriers to heavy-duty industrial nets, we utilize virgin polymers and marine-grade steel to deliver robust protection.
         </p>
       </div>
@@ -58,7 +58,7 @@ export default function ServicesPage() {
                 <h3 className="text-base md:text-lg font-bold font-sora text-navy group-hover:text-primary transition-colors">
                   {service.name}
                 </h3>
-                <p className="text-xxs md:text-xs text-gray-500 leading-relaxed mt-2 line-clamp-3">
+                <p className="text-xxs md:text-xs text-gray-600 leading-relaxed mt-2 line-clamp-3">
                   {service.shortDesc}
                 </p>
               </div>
@@ -82,12 +82,12 @@ export default function ServicesPage() {
                   href={`/services/${service.slug}`}
                   className="flex-grow text-center text-xxs font-bold bg-gray-100 hover:bg-primary hover:text-white text-navy py-2.5 rounded-lg transition-all"
                 >
-                  Configure & Price
+                  View {service.name} Details
                 </Link>
                 <a
                   href={`tel:${phone}`}
-                  className="bg-primary hover:bg-primary-dark text-white rounded-lg p-2.5 flex items-center justify-center shadow-md active:scale-95 transition-all"
-                  title="Call Ajay Now"
+                  className="bg-primary hover:bg-primary-dark text-white rounded-lg p-3 flex items-center justify-center shadow-md active:scale-95 transition-all"
+                  title={`Call Ajay about ${service.name}`}
                 >
                   <Phone className="w-4.5 h-4.5" />
                 </a>
@@ -95,8 +95,8 @@ export default function ServicesPage() {
                   href={`https://api.whatsapp.com/send?phone=${phone.replace("+", "")}&text=Hi, I am interested in ${service.name}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-emerald-500 hover:bg-emerald-600 text-white rounded-lg p-2.5 flex items-center justify-center shadow-md active:scale-95 transition-all"
-                  title="WhatsApp Inquiry"
+                  className="bg-emerald-500 hover:bg-emerald-600 text-white rounded-lg p-3 flex items-center justify-center shadow-md active:scale-95 transition-all"
+                  title={`WhatsApp inquiry about ${service.name}`}
                 >
                   <MessageSquare className="w-4.5 h-4.5 fill-current" />
                 </a>
@@ -112,7 +112,7 @@ export default function ServicesPage() {
           <h2 className="text-xl md:text-3xl font-extrabold font-sora text-navy">
             Quick Rate Comparison Calculator
           </h2>
-          <p className="text-xxs md:text-xs text-gray-500 mt-2">
+          <p className="text-xxs md:text-xs text-gray-600 mt-2">
             Pricing is calculated per square foot of area covered, including all raw materials, drilling screws, wall brackets, and expert labor.
           </p>
         </div>

@@ -33,6 +33,11 @@ export async function generateMetadata({ params }: Props) {
     keywords: [`pigeon safety nets ${city.name}`, `invisible grills ${city.name}`, `balcony safety nets ${city.name}`, `bird netting ${city.name}`, `safety nets dealers ${city.name}`],
     alternates: {
       canonical: `https://www.ajsafenetsolutions.com/${city.slug}`
+    },
+    openGraph: {
+      title: `Pigeon Safety Nets & Invisible Grills in ${city.name} | AJ Safe Net Solutions`,
+      description: `Professional safety net installation and SS 316 invisible grills in ${city.name}. Call +91 99893 91930 for free survey.`,
+      url: `https://www.ajsafenetsolutions.com/${city.slug}`,
     }
   };
 }

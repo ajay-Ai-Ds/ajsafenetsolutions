@@ -16,7 +16,7 @@ export default function FloatingButtons() {
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-3 px-5 rounded-full shadow-lg transition-transform duration-300 hover:-translate-y-1 hover:scale-105 active:scale-95 group cursor-pointer"
+          className="flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-3 px-5 rounded-full shadow-lg transition-transform duration-300 hover:-translate-y-1 hover:scale-105 active:scale-95 group cursor-pointer will-change-transform"
           aria-label="Chat on WhatsApp"
         >
           <MessageSquare className="w-5 h-5 fill-current" />
@@ -26,7 +26,7 @@ export default function FloatingButtons() {
         {/* Call Now Button */}
         <a
           href={`tel:${phone}`}
-          className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-5 rounded-full shadow-lg transition-transform duration-300 hover:-translate-y-1 hover:scale-105 active:scale-95 group cursor-pointer"
+          className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-5 rounded-full shadow-lg transition-transform duration-300 hover:-translate-y-1 hover:scale-105 active:scale-95 group cursor-pointer will-change-transform"
           aria-label="Call Owner"
         >
           <Phone className="w-5 h-5 fill-current animate-pulse group-hover:animate-none" />

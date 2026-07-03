@@ -52,7 +52,7 @@ export default function FAQSection({
           <h2 className="text-2xl md:text-4xl font-bold font-sora text-navy mb-4">
             {title}
           </h2>
-          <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-sm md:text-base text-gray-600 max-w-2xl mx-auto leading-relaxed">
             {subtitle}
           </p>
         </div>

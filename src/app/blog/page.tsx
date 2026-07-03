@@ -23,7 +23,7 @@ export default function BlogListingPage() {
         <h1 className="text-2xl md:text-5xl font-extrabold font-sora text-navy mb-4">
           Latest Safety & Bird Control Articles
         </h1>
-        <p className="text-xs md:text-sm text-gray-500">
+        <p className="text-xs md:text-sm text-gray-600">
           Stay informed about apartment safety standards, respiratory risks associated with pigeons, and modern security grill alternatives in India.
         </p>
       </div>
@@ -80,7 +80,7 @@ export default function BlogListingPage() {
                   href={`/blog/${post.slug}`}
                   className="inline-flex items-center gap-1 text-xxs font-bold text-primary hover:text-primary-dark group-hover:translate-x-0.5 transition-transform"
                 >
-                  Read Article
+                  Read: {post.title.length > 40 ? post.title.slice(0, 40) + '…' : post.title}
                   <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
               </div>

@@ -1,15 +1,17 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 import { Phone, MessageSquare, ShieldCheck, Award, Users, CheckCircle, Zap } from "lucide-react";
 import HeroCarousel from "@/components/HeroCarousel";
 import EnquiryForm from "@/components/EnquiryForm";
 import FAQSection from "@/components/FAQSection";
-import Testimonials from "@/components/Testimonials";
-import GalleryGrid from "@/components/GalleryGrid";
 import PriceTable from "@/components/PriceTable";
 import { services } from "@/data/services";
 import { getGlobalFAQs } from "@/data/faqs";
+
+const GalleryGrid = dynamic(() => import("@/components/GalleryGrid"));
+const Testimonials = dynamic(() => import("@/components/Testimonials"));
 
 export default function Home() {
   const phone = "+919989391930";
@@ -80,7 +82,7 @@ export default function Home() {
           <h2 className="text-2xl md:text-4xl font-extrabold font-sora text-navy mb-4">
             Our Premium Protection Services
           </h2>
-          <p className="text-xs md:text-sm text-gray-500">
+          <p className="text-xs md:text-sm text-gray-600">
             Select from our extensive catalog of certified safety netting and invisible grill products. Expert same-day installation and durable materials guaranteed.
           </p>
         </div>
@@ -111,7 +113,7 @@ export default function Home() {
                   <h3 className="text-base md:text-lg font-bold font-sora text-navy group-hover:text-primary transition-colors">
                     {service.name}
                   </h3>
-                  <p className="text-xxs md:text-xs text-gray-500 leading-relaxed mt-2 line-clamp-3">
+                  <p className="text-xxs md:text-xs text-gray-600 leading-relaxed mt-2 line-clamp-3">
                     {service.shortDesc}
                   </p>
                 </div>
@@ -132,12 +134,12 @@ export default function Home() {
                     href={`/services/${service.slug}`}
                     className="flex-grow text-center text-xxs font-bold bg-gray-100 hover:bg-primary hover:text-white text-navy py-2.5 rounded-lg transition-all"
                   >
-                    Learn More
+                    View {service.name} Details
                   </Link>
                   <a
                     href={`tel:${phone}`}
-                    className="bg-primary hover:bg-primary-dark text-white rounded-lg p-2.5 flex items-center justify-center shadow-md active:scale-95 transition-all"
-                    title="Call Ajay Now"
+                    className="bg-primary hover:bg-primary-dark text-white rounded-lg p-3 flex items-center justify-center shadow-md active:scale-95 transition-all"
+                    title={`Call Ajay about ${service.name}`}
                   >
                     <Phone className="w-4.5 h-4.5" />
                   </a>
@@ -145,8 +147,8 @@ export default function Home() {
                     href={`https://api.whatsapp.com/send?phone=${phone.replace("+", "")}&text=Hi,%20I%20am%20interested%20in%20${service.name}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-emerald-500 hover:bg-emerald-600 text-white rounded-lg p-2.5 flex items-center justify-center shadow-md active:scale-95 transition-all"
-                    title="WhatsApp Inquiry"
+                    className="bg-emerald-500 hover:bg-emerald-600 text-white rounded-lg p-3 flex items-center justify-center shadow-md active:scale-95 transition-all"
+                    title={`WhatsApp inquiry about ${service.name}`}
                   >
                     <MessageSquare className="w-4.5 h-4.5 fill-current" />
                   </a>
@@ -173,10 +175,10 @@ export default function Home() {
             About AJ Safe Net Solutions
           </h2>
           <div className="bg-white border border-gray-100 p-6 md:p-8 rounded-3xl shadow-sm space-y-4">
-            <p className="text-xs md:text-sm text-gray-650 leading-relaxed font-normal">
+            <p className="text-xs md:text-sm text-gray-700 leading-relaxed font-normal">
               <strong>AJ Safe Net Solutions</strong>, led by Ajay, is a professional safety net and invisible grill installation company operating since 2019. Serving Vijayawada, Chennai, Bangalore, and Pune with 1000+ successfully completed projects and a 5.0-star customer rating. The company specializes in SS316 marine-grade invisible grills and UV-resistant HDPE pigeon safety nets. Known for same-day response, transparent pricing with no hidden charges, and a 1-year installation warranty. Contact: +91 99893 91930
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xxs md:text-xs text-gray-550 border-t border-gray-100 pt-4 font-semibold">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xxs md:text-xs text-gray-600 border-t border-gray-100 pt-4 font-semibold">
               <div>
                 <strong>Founder/Owner:</strong> Ajay
               </div>
@@ -205,7 +207,7 @@ export default function Home() {
             Vijayawada&apos;s Professional Safety Net & Invisible Grill Contractors
           </h2>
           
-          <p className="text-xs md:text-sm text-gray-500 leading-relaxed">
+          <p className="text-xs md:text-sm text-gray-600 leading-relaxed">
             For over 5 years, AJ Safe Net Solutions has secured homes, high-rise balconies, stairwells, offices, and plumbing ducts from accidental fall risks and pigeon droppings. We serve Vijayawada, Chennai, Bangalore, and Pune with certified technicians and BIS-certified safety products.
           </p>
 
@@ -216,8 +218,8 @@ export default function Home() {
                   <Zap className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-navy text-xs md:text-sm">{feat.title}</h4>
-                  <p className="text-xxs text-gray-500 leading-relaxed mt-1">{feat.desc}</p>
+                  <h3 className="font-bold text-navy text-xs md:text-sm">{feat.title}</h3>
+                  <p className="text-xxs text-gray-600 leading-relaxed mt-1">{feat.desc}</p>
                 </div>
               </div>
             ))}
@@ -236,7 +238,7 @@ export default function Home() {
           <h2 className="text-2xl md:text-4xl font-extrabold font-sora text-navy mb-4">
             Our Simple 4-Step Process
           </h2>
-          <p className="text-xs md:text-sm text-gray-500">
+          <p className="text-xs md:text-sm text-gray-600">
             From initial phone call to completed installation, we ensure a seamless and hassle-free service experience.
           </p>
         </div>
@@ -255,7 +257,7 @@ export default function Home() {
               <h3 className="font-bold font-sora text-navy text-sm md:text-base mb-2 pt-4">
                 {item.title}
               </h3>
-              <p className="text-xxs md:text-xs text-gray-500 leading-relaxed">
+              <p className="text-xxs md:text-xs text-gray-600 leading-relaxed">
                 {item.desc}
               </p>
             </div>
@@ -270,7 +272,7 @@ export default function Home() {
             <h2 className="text-2xl md:text-4xl font-bold font-sora text-navy mb-3">
               Gallery of Our Installations
             </h2>
-            <p className="text-xs md:text-sm text-gray-500 max-w-lg">
+            <p className="text-xs md:text-sm text-gray-600 max-w-lg">
               Explore filterable high-quality images showcasing our actual safety net and invisible grill works.
             </p>
           </div>

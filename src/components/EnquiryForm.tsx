@@ -83,7 +83,7 @@ Message: ${formData.message || "Requesting quote & site measurement."}`;
       <div className="flex flex-col items-center justify-center p-8 text-center bg-white border border-gray-100 rounded-2xl shadow-xl min-h-[400px] animate-fade-reveal">
         <CheckCircle className="w-16 h-16 text-emerald-500 mb-4 animate-bounce" />
         <h3 className="text-xl md:text-2xl font-bold font-sora text-navy mb-2">Thank You, {formData.name}!</h3>
-        <p className="text-xs md:text-sm text-gray-500 max-w-sm mb-6">
+        <p className="text-xs md:text-sm text-gray-600 max-w-sm mb-6">
           Your details are verified. Redirecting you to WhatsApp to connect with Owner Ajay instantly...
         </p>
         <a

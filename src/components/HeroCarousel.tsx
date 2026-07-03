@@ -80,6 +80,7 @@ export default function HeroCarousel() {
                 src={slide.src}
                 alt={slide.title}
                 fill
+                sizes="100vw"
                 priority={idx === 0}
                 className="object-cover object-center scale-102"
               />
@@ -96,9 +97,9 @@ export default function HeroCarousel() {
                     </span>
 
                     {/* Title */}
-                    <h2 className="text-3xl md:text-5xl lg:text-6xl font-extrabold font-sora tracking-tight leading-tight max-w-2xl text-shadow-sm">
+                    <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold font-sora tracking-tight leading-tight max-w-2xl text-shadow-sm">
                       {slide.title}
-                    </h2>
+                    </h1>
 
                     {/* Description */}
                     <p className="text-sm md:text-lg text-gray-200 max-w-xl font-medium leading-relaxed">

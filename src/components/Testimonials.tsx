@@ -25,7 +25,7 @@ export default function Testimonials() {
             <h2 className="text-2xl md:text-4xl font-bold font-sora text-navy mb-4">
               What Our Customers Say
             </h2>
-            <p className="text-sm md:text-base text-gray-500 max-w-xl leading-relaxed">
+            <p className="text-sm md:text-base text-gray-600 max-w-xl leading-relaxed">
               We take pride in securing homes and commercial spaces across India. Hear from our satisfied clients.
             </p>
           </div>
@@ -93,7 +93,7 @@ export default function Testimonials() {
                 <div className="flex items-center justify-between border-t border-gray-100 pt-4">
                   <div>
                     <h4 className="font-bold text-navy text-sm">{review.name}</h4>
-                    <span className="text-xxs text-gray-400 font-medium">{review.location}</span>
+                    <span className="text-xxs text-gray-500 font-medium">{review.location}</span>
                   </div>
                   
                   <div className="flex items-center gap-1.5 text-xxs font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full">

@@ -4,7 +4,15 @@ import FAQSection from "@/components/FAQSection";
 
 export const metadata = {
   title: "Pricing Guide | Safety Nets & Invisible Grills Price | AJ Safe Net Solutions",
-  description: "View transparent pricing for safety nets and invisible grills in Vijayawada, Chennai, Bangalore, Pune. Prices start from ₹8/sqft. Call Ajay for a free quote."
+  description: "View transparent pricing for safety nets and invisible grills in Vijayawada, Chennai, Bangalore, Pune. Prices start from ₹8/sqft. Call Ajay for a free quote.",
+  alternates: {
+    canonical: "https://www.ajsafenetsolutions.com/pricing"
+  },
+  openGraph: {
+    title: "Pricing Guide | Safety Nets & Invisible Grills Price | AJ Safe Net Solutions",
+    description: "View transparent pricing for safety nets and invisible grills in Vijayawada, Chennai, Bangalore, Pune. Prices start from ₹8/sqft.",
+    url: "https://www.ajsafenetsolutions.com/pricing",
+  }
 };
 
 export default function PricingPage() {

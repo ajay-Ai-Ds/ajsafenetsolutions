@@ -63,14 +63,14 @@ export default function PriceTable() {
                       href={waUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-emerald-500 hover:bg-emerald-600 text-white rounded-full p-2 hover:scale-105 transition-all shadow-md"
+                      className="bg-emerald-500 hover:bg-emerald-600 text-white rounded-full p-3 hover:scale-105 transition-all shadow-md"
                       title="Inquire on WhatsApp"
                     >
                       <MessageSquare className="w-4 h-4 fill-current" />
                     </a>
                     <a
                       href={`tel:${phone}`}
-                      className="bg-blue-600 hover:bg-blue-700 text-white rounded-full p-2 hover:scale-105 transition-all shadow-md"
+                      className="bg-blue-600 hover:bg-blue-700 text-white rounded-full p-3 hover:scale-105 transition-all shadow-md"
                       title="Call Installer"
                     >
                       <Phone className="w-4 h-4 fill-current" />

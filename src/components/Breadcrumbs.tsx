@@ -34,7 +34,7 @@ export default function Breadcrumbs() {
   };
 
   return (
-    <nav className="py-3 px-4 md:px-8 max-w-7xl mx-auto flex items-center space-x-2 text-xs md:text-sm text-gray-500 font-medium border-b border-gray-100 bg-white" aria-label="Breadcrumb">
+    <nav className="py-3 px-4 md:px-8 max-w-7xl mx-auto flex items-center space-x-2 text-xs md:text-sm text-gray-600 font-medium border-b border-gray-100 bg-white" aria-label="Breadcrumb">
       {/* Schema Injection */}
       <script
         type="application/ld+json"

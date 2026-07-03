@@ -29,6 +29,12 @@ export async function generateMetadata({ params }: Props) {
     keywords: post.keywords,
     alternates: {
       canonical: `https://www.ajsafenetsolutions.com/blog/${post.slug}`
+    },
+    openGraph: {
+      title: `${post.title} | AJ Safe Net Solutions`,
+      description: post.metaDesc,
+      url: `https://www.ajsafenetsolutions.com/blog/${post.slug}`,
+      images: [`https://www.ajsafenetsolutions.com/images/${post.featuredImage}`],
     }
   };
 }
@@ -298,7 +304,7 @@ export default async function BlogPostPage({ params }: Props) {
                   href={`/blog/${p.slug}`}
                   className="mt-4 inline-flex items-center gap-1 text-xxs font-bold text-primary hover:text-primary-dark"
                 >
-                  Read Article
+                  Read: {p.title.length > 40 ? p.title.slice(0, 40) + '…' : p.title}
                   <ChevronRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
                 </Link>
               </div>
