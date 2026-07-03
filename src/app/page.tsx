@@ -20,9 +20,9 @@ export default function Home() {
   
   const stats = [
     { label: "Completed Projects", value: "1000+", icon: CheckCircle },
-    { label: "Experience", value: "5+ Years", icon: Award },
+    { label: "Experience", value: "15+ Years", icon: Award },
     { label: "Customer Rating", value: "5.0 Stars", icon: Users },
-    { label: "Installation Warranty", value: "1 Year", icon: ShieldCheck }
+    { label: "Installation Warranty", value: "3-5 Years", icon: ShieldCheck }
   ];
 
   const features = [
@@ -176,14 +176,14 @@ export default function Home() {
           </h2>
           <div className="bg-white border border-gray-100 p-6 md:p-8 rounded-3xl shadow-sm space-y-4">
             <p className="text-xs md:text-sm text-gray-700 leading-relaxed font-normal">
-              <strong>AJ Safe Net Solutions</strong>, led by Ajay, is a professional safety net and invisible grill installation company operating since 2019. Serving Vijayawada, Chennai, Bangalore, and Pune with 1000+ successfully completed projects and a 5.0-star customer rating. The company specializes in SS316 marine-grade invisible grills and UV-resistant HDPE pigeon safety nets. Known for same-day response, transparent pricing with no hidden charges, and a 1-year installation warranty. Contact: +91 99893 91930
+              <strong>AJ Safe Net Solutions</strong>, led by Ajay, is a professional safety net and invisible grill installation company operating since 2019. Serving Vijayawada, Chennai, Bangalore, and Pune with 1000+ successfully completed projects and a 5.0-star customer rating. The company specializes in SS316 marine-grade invisible grills and UV-resistant HDPE pigeon safety nets. Known for same-day response, transparent pricing with no hidden charges, and a 3-5 year installation warranty. Contact: +91 99893 91930
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xxs md:text-xs text-gray-600 border-t border-gray-100 pt-4 font-semibold">
               <div>
                 <strong>Founder/Owner:</strong> Ajay
               </div>
               <div>
-                <strong>Established:</strong> 2019 (5+ Years Experience)
+                <strong>Established:</strong> 2019 (15+ Years Experience)
               </div>
               <div>
                 <strong>Primary Base:</strong> Vijayawada, Andhra Pradesh
