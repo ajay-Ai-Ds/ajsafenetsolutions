@@ -15,7 +15,7 @@ export default function Navbar() {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   
   const pathname = usePathname();
-  const phone = "+919989391930";
+  const phone = "+918121488961";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,7 +50,7 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between">
           {/* Logo and Brand */}
-          <Link href="/" className="flex items-center gap-2.5 group">
+          <Link href="/" className="flex items-center gap-2.5 group focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none rounded-xl">
             <div className="relative w-12 h-12 md:w-16 md:h-16 overflow-hidden rounded-xl border border-white/10 group-hover:scale-105 transition-transform shrink-0">
               <Image
                 src="/images/ajslogo.webp"
@@ -85,7 +85,7 @@ export default function Navbar() {
                     onMouseEnter={() => setActiveDropdown("services")}
                     onMouseLeave={() => setActiveDropdown(null)}
                   >
-                    <button className="flex items-center gap-1 px-3 py-2 rounded-lg font-semibold font-sora text-xs md:text-sm text-gray-200 hover:text-white transition-colors cursor-pointer">
+                    <button className="flex items-center gap-1 px-3 py-2 rounded-lg font-semibold font-sora text-xs md:text-sm text-gray-200 hover:text-white transition-colors cursor-pointer focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none min-h-[44px]">
                       <span>Services</span>
                       <ChevronDown className="w-4 h-4 transition-transform group-hover/menu:rotate-180" />
                     </button>
@@ -96,7 +96,7 @@ export default function Navbar() {
                           <Link
                             key={s.slug}
                             href={`/services/${s.slug}`}
-                            className="px-3 py-2 rounded-lg text-xxs md:text-xs text-gray-300 hover:bg-gray-800 hover:text-white transition-all font-semibold"
+                            className="px-3 py-2 rounded-lg text-xxs md:text-xs text-gray-300 hover:bg-gray-800 hover:text-white transition-all font-semibold block min-h-[44px] flex items-center"
                           >
                             {s.name}
                           </Link>
@@ -116,7 +116,7 @@ export default function Navbar() {
                     onMouseEnter={() => setActiveDropdown("cities")}
                     onMouseLeave={() => setActiveDropdown(null)}
                   >
-                    <button className="flex items-center gap-1 px-3 py-2 rounded-lg font-semibold font-sora text-xs md:text-sm text-gray-200 hover:text-white transition-colors cursor-pointer">
+                    <button className="flex items-center gap-1 px-3 py-2 rounded-lg font-semibold font-sora text-xs md:text-sm text-gray-200 hover:text-white transition-colors cursor-pointer focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none min-h-[44px]">
                       <span>Cities</span>
                       <ChevronDown className="w-4 h-4 transition-transform group-hover/menu:rotate-180" />
                     </button>
@@ -127,7 +127,7 @@ export default function Navbar() {
                           <Link
                             key={c.slug}
                             href={`/${c.slug}`}
-                            className="px-3 py-2 rounded-lg text-xxs md:text-xs text-gray-300 hover:bg-gray-800 hover:text-white transition-all font-semibold"
+                            className="px-3 py-2 rounded-lg text-xxs md:text-xs text-gray-300 hover:bg-gray-800 hover:text-white transition-all font-semibold block min-h-[44px] flex items-center"
                           >
                             {c.name}
                           </Link>
@@ -142,7 +142,7 @@ export default function Navbar() {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className={`px-3 py-2 rounded-lg font-semibold font-sora text-xs md:text-sm transition-colors ${
+                  className={`px-3 py-2 rounded-lg font-semibold font-sora text-xs md:text-sm transition-colors focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none inline-flex items-center min-h-[44px] ${
                     isActive 
                       ? "text-primary bg-primary/10 font-bold" 
                       : "text-gray-200 hover:text-white hover:bg-gray-800/40"
@@ -158,18 +158,19 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center gap-4">
             <a
               href={`tel:${phone}`}
-              className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-bold py-2.5 px-5 rounded-full text-xs md:text-sm shadow-lg shadow-primary/20 hover:shadow-primary/30 transition-all cursor-pointer"
+              className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-bold py-2.5 px-5 rounded-full text-xs md:text-sm shadow-lg shadow-primary/20 hover:shadow-primary/30 transition-all cursor-pointer min-h-[44px] focus-visible:ring-2 focus-visible:ring-primary-dark focus-visible:outline-none"
             >
               <Phone className="w-4 h-4" />
-              +91 9989391930
+              +91 8121488961
             </a>
           </div>
 
-          {/* Mobile hamburger menu button */}
+          {/* Mobile hamburger menu button with 44x44px minimum tap target */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden text-white hover:text-primary p-2 focus:outline-none cursor-pointer"
+            className="lg:hidden text-white hover:text-primary p-3 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-primary cursor-pointer min-w-[44px] min-h-[44px] flex items-center justify-center"
             aria-label="Toggle Navigation Menu"
+            aria-expanded={isOpen}
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -189,13 +190,13 @@ export default function Navbar() {
                 const dropItems = link.name === "Services" ? services : cities;
 
                 return (
-                  <div key={link.name} className="border-b border-gray-850 pb-2">
+                  <div key={link.name} className="border-b border-gray-800 pb-2">
                     <button
                       onClick={() => toggleDropdown(dropId)}
-                      className="w-full flex items-center justify-between font-semibold font-sora text-base text-gray-200 py-2 focus:outline-none cursor-pointer"
+                      className="w-full flex items-center justify-between font-semibold font-sora text-base text-gray-200 py-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-lg px-2 cursor-pointer min-h-[44px]"
                     >
                       <span>{link.name}</span>
-                      <ChevronDown className={`w-5 h-5 transition-transform ${isDropActive ? "rotate-185 text-primary" : ""}`} />
+                      <ChevronDown className={`w-5 h-5 transition-transform ${isDropActive ? "rotate-180 text-primary" : ""}`} />
                     </button>
                     
                     {isDropActive && (
@@ -206,7 +207,7 @@ export default function Navbar() {
                             <Link
                               key={item.slug}
                               href={href}
-                              className="text-xs font-semibold text-gray-400 hover:text-white py-1 block"
+                              className="text-xs font-semibold text-gray-300 hover:text-white py-2 block min-h-[44px] flex items-center"
                             >
                               {item.name}
                             </Link>
@@ -223,7 +224,7 @@ export default function Navbar() {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className={`block py-2 border-b border-gray-850 font-semibold font-sora text-base transition-colors ${
+                  className={`block py-3 border-b border-gray-800 font-semibold font-sora text-base transition-colors min-h-[44px] flex items-center ${
                     isActive ? "text-primary border-primary font-bold" : "text-gray-200 hover:text-white"
                   }`}
                 >
@@ -236,10 +237,10 @@ export default function Navbar() {
           <div className="mt-8 space-y-4">
             <a
               href={`tel:${phone}`}
-              className="w-full flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-white font-bold py-3 rounded-full text-sm shadow-lg shadow-primary/20"
+              className="w-full flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-white font-bold py-3.5 rounded-full text-sm shadow-lg shadow-primary/20 min-h-[48px]"
             >
               <Phone className="w-4 h-4" />
-              Call Now: +91 9989391930
+              Call Now: +91 8121488961
             </a>
           </div>
         </div>

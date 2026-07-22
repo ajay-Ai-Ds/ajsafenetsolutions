@@ -14,7 +14,7 @@ export const metadata = {
 };
 
 export default function ServicesPage() {
-  const phone = "+919989391930";
+  const phone = "+918121488961";
   
   return (
     <div className="max-w-7xl mx-auto px-4 md:px-8 py-10 md:py-16 space-y-16 md:space-y-24 animate-fade-reveal">
@@ -44,7 +44,7 @@ export default function ServicesPage() {
                 src={`/images/${service.imageName}`}
                 alt={service.tagline}
                 fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
               />
               <div className="absolute top-4 left-4 bg-primary text-white text-xxs font-extrabold px-3 py-1.5 rounded-full shadow-md">
@@ -80,14 +80,14 @@ export default function ServicesPage() {
               <div className="flex gap-2 pt-2">
                 <Link
                   href={`/services/${service.slug}`}
-                  className="flex-grow text-center text-xxs font-bold bg-gray-100 hover:bg-primary hover:text-white text-navy py-2.5 rounded-lg transition-all"
+                  className="flex-grow text-center text-xs font-bold bg-gray-100 hover:bg-primary hover:text-white text-navy py-3 px-3 rounded-lg transition-all min-h-[44px] flex items-center justify-center focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none"
                 >
-                  View {service.name} Details
+                  View Details
                 </Link>
                 <a
                   href={`tel:${phone}`}
-                  className="bg-primary hover:bg-primary-dark text-white rounded-lg p-3 flex items-center justify-center shadow-md active:scale-95 transition-all"
-                  title={`Call Ajay about ${service.name}`}
+                  className="bg-primary hover:bg-primary-dark text-white rounded-lg p-3 flex items-center justify-center shadow-md active:scale-95 transition-all min-w-[44px] min-h-[44px] focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none"
+                  aria-label={`Call about ${service.name}`}
                 >
                   <Phone className="w-4.5 h-4.5" />
                 </a>
@@ -95,8 +95,8 @@ export default function ServicesPage() {
                   href={`https://api.whatsapp.com/send?phone=${phone.replace("+", "")}&text=Hi, I am interested in ${service.name}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-emerald-500 hover:bg-emerald-600 text-white rounded-lg p-3 flex items-center justify-center shadow-md active:scale-95 transition-all"
-                  title={`WhatsApp inquiry about ${service.name}`}
+                  className="bg-emerald-500 hover:bg-emerald-600 text-white rounded-lg p-3 flex items-center justify-center shadow-md active:scale-95 transition-all min-w-[44px] min-h-[44px] focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:outline-none"
+                  aria-label={`WhatsApp inquiry about ${service.name}`}
                 >
                   <MessageSquare className="w-4.5 h-4.5 fill-current" />
                 </a>

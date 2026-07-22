@@ -43,7 +43,7 @@ export default async function ServicePage({ params }: Props) {
   const service = getServiceBySlug(resolvedParams.service);
   if (!service) notFound();
 
-  const phone = "+919989391930";
+  const phone = "+918121488961";
   const whatsappText = `Hi, I am interested in ${service.name} installation. Please schedule a free site survey.`;
   const whatsappUrl = `https://api.whatsapp.com/send?phone=${phone.replace("+", "")}&text=${encodeURIComponent(whatsappText)}`;
 
@@ -55,23 +55,21 @@ export default async function ServicePage({ params }: Props) {
   // Generate unique 1000+ words SEO content for the service
   const seoContent = getSeoContentForService(service.slug, service.name);
 
-  // Inject Service Schema JSON-LD
+  // JSON-LD Product & Service Schema
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": service.name,
-    "description": service.shortDesc,
     "provider": {
       "@type": "LocalBusiness",
       "name": "AJ Safe Net Solutions",
-      "telephone": phone,
-      "email": "ajsafenetsolutions@gmail.com"
+      "telephone": phone
     },
+    "description": service.shortDesc,
     "offers": {
       "@type": "Offer",
       "price": service.minPrice.toString(),
-      "priceCurrency": "INR",
-      "description": `Price starts from ${service.priceRange}`
+      "priceCurrency": "INR"
     }
   };
 
@@ -91,6 +89,7 @@ export default async function ServicePage({ params }: Props) {
             src={`/images/${service.imageName}`}
             alt={service.name}
             fill
+            sizes="100vw"
             className="object-cover blur-sm"
           />
         </div>
@@ -107,19 +106,19 @@ export default async function ServicePage({ params }: Props) {
             <p className="text-xs md:text-lg text-gray-300 max-w-2xl leading-relaxed font-medium">
               {service.shortDesc} Secured with premium industrial components. Pricing estimates: <span className="text-primary-light font-bold">{service.priceRange}</span>.
             </p>
-            <div className="flex gap-3 pt-2">
+            <div className="flex gap-3 pt-2 flex-wrap">
               <a
                 href={`tel:${phone}`}
-                className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-bold py-3 px-6 rounded-full shadow-lg text-xs md:text-sm transition-all"
+                className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-bold py-3.5 px-6 rounded-full shadow-lg text-xs md:text-sm transition-all min-h-[44px] focus-visible:ring-2 focus-visible:ring-primary-dark focus-visible:outline-none"
               >
                 <Phone className="w-4.5 h-4.5" />
-                Call Owner Ajay
+                Call +91 8121488961
               </a>
               <a
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3 px-6 rounded-full shadow-lg text-xs md:text-sm transition-all"
+                className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3.5 px-6 rounded-full shadow-lg text-xs md:text-sm transition-all min-h-[44px] focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:outline-none"
               >
                 <MessageSquare className="w-4.5 h-4.5 fill-current" />
                 WhatsApp Message
@@ -132,6 +131,7 @@ export default async function ServicePage({ params }: Props) {
                 src={`/images/${service.imageName}`}
                 alt={service.name}
                 fill
+                sizes="(max-width: 1280px) 30vw, 400px"
                 className="object-cover"
               />
             </div>
@@ -275,6 +275,7 @@ export default async function ServicePage({ params }: Props) {
                   src={img.src}
                   alt={img.alt}
                   fill
+                  sizes="(max-width: 768px) 50vw, 25vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-navy/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-3 text-center text-white text-xxs font-bold">

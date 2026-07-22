@@ -78,7 +78,7 @@ export default function BlogListingPage() {
                 
                 <Link
                   href={`/blog/${post.slug}`}
-                  className="inline-flex items-center gap-1 text-xxs font-bold text-primary hover:text-primary-dark group-hover:translate-x-0.5 transition-transform"
+                  className="inline-flex items-center gap-1 text-xs font-bold text-primary hover:text-primary-dark group-hover:translate-x-0.5 transition-transform min-h-[44px] focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none"
                 >
                   Read: {post.title.length > 40 ? post.title.slice(0, 40) + '…' : post.title}
                   <ArrowRight className="w-3.5 h-3.5" />

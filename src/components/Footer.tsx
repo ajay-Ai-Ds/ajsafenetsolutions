@@ -6,11 +6,11 @@ import { footerServiceLinks, footerCityLinks } from "@/data/navigation";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
-  const phone = "+919989391930";
+  const phone = "+918121488961";
   const email = "ajsafenetsolutions@gmail.com";
   
   return (
-    <footer className="bg-navy border-t border-gray-800 text-gray-300 pt-16 pb-8">
+    <footer className="bg-navy border-t border-gray-800 text-gray-300 pt-16 pb-20 md:pb-8">
       <div className="max-w-7xl mx-auto px-4 md:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 mb-12">
         {/* Brand Info */}
         <div className="space-y-4">

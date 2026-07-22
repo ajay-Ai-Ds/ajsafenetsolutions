@@ -57,7 +57,7 @@ export default function HeroCarousel() {
   };
 
   useEffect(() => {
-    const timer = setInterval(nextSlide, 3000);
+    const timer = setInterval(nextSlide, 6000);
     return () => clearInterval(timer);
   }, [nextSlide]);
 
@@ -80,8 +80,10 @@ export default function HeroCarousel() {
                 src={slide.src}
                 alt={slide.title}
                 fill
-                sizes="100vw"
+                sizes="(max-width: 640px) 640px, (max-width: 1024px) 1024px, 100vw"
+                quality={70}
                 priority={idx === 0}
+                fetchPriority={idx === 0 ? "high" : "auto"}
                 className="object-cover object-center scale-102"
               />
               {/* Gradient Overlay */}
@@ -90,7 +92,7 @@ export default function HeroCarousel() {
               {/* Slide Content */}
               {isActive && (
                 <div className="absolute inset-0 flex items-center z-20">
-                  <div className="max-w-4xl mx-auto px-6 md:px-12 w-full text-white space-y-4 md:space-y-6 animate-fade-reveal">
+                  <div className="max-w-4xl mx-auto px-6 md:px-12 w-full text-white space-y-4 md:space-y-6">
                     {/* Badge */}
                     <span className="inline-block bg-primary/20 text-primary-light border border-primary/40 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
                       {slide.tagline}
@@ -137,7 +139,7 @@ export default function HeroCarousel() {
       {/* Manual Navigation Controls */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 z-30 bg-navy/40 hover:bg-navy/75 text-white p-2.5 rounded-full backdrop-blur-sm border border-white/10 transition-all active:scale-90 hover:scale-105 cursor-pointer"
+        className="absolute left-3 md:left-4 top-1/2 -translate-y-1/2 z-30 bg-navy/50 hover:bg-navy/80 text-white p-3 rounded-full backdrop-blur-sm border border-white/20 transition-all active:scale-90 hover:scale-105 cursor-pointer min-w-[44px] min-h-[44px] flex items-center justify-center focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none"
         aria-label="Previous Slide"
       >
         <ChevronLeft className="w-6 h-6" />
@@ -145,7 +147,7 @@ export default function HeroCarousel() {
 
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-30 bg-navy/40 hover:bg-navy/75 text-white p-2.5 rounded-full backdrop-blur-sm border border-white/10 transition-all active:scale-90 hover:scale-105 cursor-pointer"
+        className="absolute right-3 md:right-4 top-1/2 -translate-y-1/2 z-30 bg-navy/50 hover:bg-navy/80 text-white p-3 rounded-full backdrop-blur-sm border border-white/20 transition-all active:scale-90 hover:scale-105 cursor-pointer min-w-[44px] min-h-[44px] flex items-center justify-center focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none"
         aria-label="Next Slide"
       >
         <ChevronRight className="w-6 h-6" />
@@ -157,11 +159,15 @@ export default function HeroCarousel() {
           <button
             key={idx}
             onClick={() => setCurrentSlide(idx)}
-            className={`h-2.5 rounded-full transition-all cursor-pointer ${
-              currentSlide === idx ? "w-8 bg-primary" : "w-2.5 bg-white/40 hover:bg-white/70"
-            }`}
+            className={`py-2 px-1 focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none cursor-pointer flex items-center min-h-[44px]`}
             aria-label={`Go to slide ${idx + 1}`}
-          />
+          >
+            <span
+              className={`h-2.5 rounded-full transition-all block ${
+                currentSlide === idx ? "w-8 bg-primary" : "w-3 bg-white/50 hover:bg-white/80"
+              }`}
+            />
+          </button>
         ))}
       </div>
     </div>

@@ -47,7 +47,7 @@ export default async function CityPage({ params }: Props) {
   const city = getCityBySlug(resolvedParams.city);
   if (!city) notFound();
 
-  const phone = "+919989391930";
+  const phone = "+918121488961";
   const whatsappText = `Hi, I am looking for safety net installation in ${city.name}. Please arrange a free assessment.`;
   const whatsappUrl = `https://api.whatsapp.com/send?phone=${phone.replace("+", "")}&text=${encodeURIComponent(whatsappText)}`;
 
@@ -99,6 +99,7 @@ export default async function CityPage({ params }: Props) {
             src="/images/2.jpeg"
             alt={`Safety net installation in ${city.name}`}
             fill
+            sizes="100vw"
             className="object-cover"
           />
         </div>
@@ -115,19 +116,19 @@ export default async function CityPage({ params }: Props) {
             <p className="text-xs md:text-lg text-gray-300 max-w-2xl leading-relaxed font-medium">
               India&apos;s leading safety experts now serving all residential, commercial, and industrial areas in <span className="text-primary-light font-bold">{city.name}</span>. Same-day site visit and quick installations.
             </p>
-            <div className="flex gap-3 pt-2">
+            <div className="flex gap-3 pt-2 flex-wrap">
               <a
                 href={`tel:${phone}`}
-                className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-bold py-3 px-6 rounded-full shadow-lg text-xs md:text-sm transition-all"
+                className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-bold py-3.5 px-6 rounded-full shadow-lg text-xs md:text-sm transition-all min-h-[44px] focus-visible:ring-2 focus-visible:ring-primary-dark focus-visible:outline-none"
               >
                 <Phone className="w-4.5 h-4.5" />
-                Call +91 9989391930
+                Call +91 8121488961
               </a>
               <a
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3 px-6 rounded-full shadow-lg text-xs md:text-sm transition-all"
+                className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3.5 px-6 rounded-full shadow-lg text-xs md:text-sm transition-all min-h-[44px] focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:outline-none"
               >
                 <MessageSquare className="w-4.5 h-4.5 fill-current" />
                 WhatsApp Survey

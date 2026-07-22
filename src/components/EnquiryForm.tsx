@@ -27,7 +27,7 @@ export default function EnquiryForm({
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const ownerPhone = "+919989391930";
+  const ownerPhone = "+918121488961";
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -88,7 +88,7 @@ Message: ${formData.message || "Requesting quote & site measurement."}`;
         </p>
         <a
           href={`https://api.whatsapp.com/send?phone=${ownerPhone.replace("+", "")}`}
-          className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-2 px-6 rounded-full shadow-md transition-all hover:-translate-y-0.5"
+          className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-3 px-6 rounded-full shadow-md transition-all hover:-translate-y-0.5 min-h-[48px]"
         >
           <MessageSquare className="w-4 h-4 fill-current" />
           Connect Instantly
@@ -110,7 +110,7 @@ Message: ${formData.message || "Requesting quote & site measurement."}`;
       <form onSubmit={handleSubmit} className="space-y-4">
         {/* Name */}
         <div>
-          <label htmlFor="name" className="block text-xs font-semibold text-gray-700 mb-1.5">
+          <label htmlFor="name" className="block text-xs font-semibold text-gray-800 mb-1.5">
             Full Name *
           </label>
           <input
@@ -120,37 +120,38 @@ Message: ${formData.message || "Requesting quote & site measurement."}`;
             value={formData.name}
             onChange={handleChange}
             placeholder="Enter your name"
-            className={`w-full px-4 py-2.5 rounded-lg border text-xs md:text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all ${
-              errors.name ? "border-red-500 bg-red-50/10" : "border-gray-200"
+            className={`w-full px-4 py-3 rounded-lg border text-base md:text-sm text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition-all ${
+              errors.name ? "border-red-500 bg-red-50/10" : "border-gray-300"
             }`}
           />
-          {errors.name && <span className="text-xxs text-red-500 mt-1 block">{errors.name}</span>}
+          {errors.name && <span className="text-xs text-red-600 mt-1 block font-medium">{errors.name}</span>}
         </div>
 
         {/* Phone */}
         <div>
-          <label htmlFor="phone" className="block text-xs font-semibold text-gray-700 mb-1.5">
+          <label htmlFor="phone" className="block text-xs font-semibold text-gray-800 mb-1.5">
             Mobile Number *
           </label>
           <input
             type="tel"
+            inputMode="tel"
             id="phone"
             name="phone"
             value={formData.phone}
             onChange={handleChange}
-            placeholder="e.g. 9989391930"
-            className={`w-full px-4 py-2.5 rounded-lg border text-xs md:text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all ${
-              errors.phone ? "border-red-500 bg-red-50/10" : "border-gray-200"
+            placeholder="e.g. 8121488961"
+            className={`w-full px-4 py-3 rounded-lg border text-base md:text-sm text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition-all ${
+              errors.phone ? "border-red-500 bg-red-50/10" : "border-gray-300"
             }`}
           />
-          {errors.phone && <span className="text-xxs text-red-500 mt-1 block">{errors.phone}</span>}
+          {errors.phone && <span className="text-xs text-red-600 mt-1 block font-medium">{errors.phone}</span>}
         </div>
 
         {/* Grid for City and Service */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* Service */}
           <div>
-            <label htmlFor="service" className="block text-xs font-semibold text-gray-700 mb-1.5">
+            <label htmlFor="service" className="block text-xs font-semibold text-gray-800 mb-1.5">
               Select Service *
             </label>
             <select
@@ -158,8 +159,8 @@ Message: ${formData.message || "Requesting quote & site measurement."}`;
               name="service"
               value={formData.service}
               onChange={handleChange}
-              className={`w-full px-4 py-2.5 rounded-lg border text-xs md:text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-white ${
-                errors.service ? "border-red-500 bg-red-50/10" : "border-gray-200"
+              className={`w-full px-4 py-3 rounded-lg border text-base md:text-sm text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition-all ${
+                errors.service ? "border-red-500 bg-red-50/10" : "border-gray-300"
               }`}
             >
               <option value="">Choose Service</option>
@@ -169,12 +170,12 @@ Message: ${formData.message || "Requesting quote & site measurement."}`;
                 </option>
               ))}
             </select>
-            {errors.service && <span className="text-xxs text-red-500 mt-1 block">{errors.service}</span>}
+            {errors.service && <span className="text-xs text-red-600 mt-1 block font-medium">{errors.service}</span>}
           </div>
 
           {/* City */}
           <div>
-            <label htmlFor="city" className="block text-xs font-semibold text-gray-700 mb-1.5">
+            <label htmlFor="city" className="block text-xs font-semibold text-gray-800 mb-1.5">
               Select City *
             </label>
             <select
@@ -182,8 +183,8 @@ Message: ${formData.message || "Requesting quote & site measurement."}`;
               name="city"
               value={formData.city}
               onChange={handleChange}
-              className={`w-full px-4 py-2.5 rounded-lg border text-xs md:text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-white ${
-                errors.city ? "border-red-500 bg-red-50/10" : "border-gray-200"
+              className={`w-full px-4 py-3 rounded-lg border text-base md:text-sm text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition-all ${
+                errors.city ? "border-red-500 bg-red-50/10" : "border-gray-300"
               }`}
             >
               <option value="">Choose City</option>
@@ -193,13 +194,13 @@ Message: ${formData.message || "Requesting quote & site measurement."}`;
                 </option>
               ))}
             </select>
-            {errors.city && <span className="text-xxs text-red-500 mt-1 block">{errors.city}</span>}
+            {errors.city && <span className="text-xs text-red-600 mt-1 block font-medium">{errors.city}</span>}
           </div>
         </div>
 
         {/* Message */}
         <div>
-          <label htmlFor="message" className="block text-xs font-semibold text-gray-700 mb-1.5">
+          <label htmlFor="message" className="block text-xs font-semibold text-gray-800 mb-1.5">
             Additional Message (Optional)
           </label>
           <textarea
@@ -209,14 +210,14 @@ Message: ${formData.message || "Requesting quote & site measurement."}`;
             onChange={handleChange}
             rows={3}
             placeholder="e.g. Dimensions of balcony, timing preference, etc."
-            className="w-full px-4 py-2.5 rounded-lg border border-gray-200 text-xs md:text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all"
+            className="w-full px-4 py-3 rounded-lg border border-gray-300 text-base md:text-sm text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition-all"
           />
         </div>
 
         {/* Submit */}
         <button
           type="submit"
-          className="w-full flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-white font-bold py-3 rounded-lg shadow-md transition-all hover:shadow-lg active:scale-[0.99] text-xs md:text-sm cursor-pointer"
+          className="w-full flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-white font-bold py-3.5 px-4 rounded-lg shadow-md transition-all hover:shadow-lg active:scale-[0.99] text-sm md:text-base min-h-[48px] cursor-pointer focus-visible:ring-2 focus-visible:ring-primary-dark focus-visible:outline-none"
         >
           <Send className="w-4 h-4" />
           Send Request to WhatsApp

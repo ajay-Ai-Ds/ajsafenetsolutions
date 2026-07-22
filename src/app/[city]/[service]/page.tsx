@@ -59,7 +59,7 @@ export default async function CityServicePage({ params }: Props) {
   const service = getServiceBySlug(resolvedParams.service);
   if (!city || !service) notFound();
 
-  const phone = "+919989391930";
+  const phone = "+918121488961";
   const whatsappText = `Hi, I am interested in ${service.name} installation in ${city.name}. Please contact me.`;
   const whatsappUrl = `https://api.whatsapp.com/send?phone=${phone.replace("+", "")}&text=${encodeURIComponent(whatsappText)}`;
 
@@ -103,13 +103,7 @@ export default async function CityServicePage({ params }: Props) {
         "offers": {
           "@type": "Offer",
           "price": service.minPrice.toString(),
-          "priceCurrency": "INR",
-          "priceSpecification": {
-            "@type": "UnitPriceSpecification",
-            "price": service.minPrice.toString(),
-            "priceCurrency": "INR",
-            "unitText": service.priceUnit
-          }
+          "priceCurrency": "INR"
         }
       }
     ]
@@ -130,6 +124,7 @@ export default async function CityServicePage({ params }: Props) {
             src={`/images/${service.imageName}`}
             alt={`${service.name} in ${city.name}`}
             fill
+            sizes="100vw"
             className="object-cover"
           />
         </div>

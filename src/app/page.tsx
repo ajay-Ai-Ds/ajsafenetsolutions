@@ -14,7 +14,7 @@ const GalleryGrid = dynamic(() => import("@/components/GalleryGrid"));
 const Testimonials = dynamic(() => import("@/components/Testimonials"));
 
 export default function Home() {
-  const phone = "+919989391930";
+  const phone = "+918121488961";
   const email = "ajsafenetsolutions@gmail.com";
   const globalFaqs = getGlobalFAQs();
   
@@ -99,7 +99,7 @@ export default function Home() {
                   src={`/images/${service.imageName}`}
                   alt={service.name}
                   fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute top-4 left-4 bg-primary text-white text-xxs font-extrabold px-3 py-1.5 rounded-full shadow-md">
@@ -132,14 +132,14 @@ export default function Home() {
                 <div className="flex gap-2 pt-2">
                   <Link
                     href={`/services/${service.slug}`}
-                    className="flex-grow text-center text-xxs font-bold bg-gray-100 hover:bg-primary hover:text-white text-navy py-2.5 rounded-lg transition-all"
+                    className="flex-grow text-center text-xs font-bold bg-gray-100 hover:bg-primary hover:text-white text-navy py-3 px-3 rounded-lg transition-all min-h-[44px] flex items-center justify-center focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none"
                   >
-                    View {service.name} Details
+                    View Details
                   </Link>
                   <a
                     href={`tel:${phone}`}
-                    className="bg-primary hover:bg-primary-dark text-white rounded-lg p-3 flex items-center justify-center shadow-md active:scale-95 transition-all"
-                    title={`Call Ajay about ${service.name}`}
+                    className="bg-primary hover:bg-primary-dark text-white rounded-lg p-3 flex items-center justify-center shadow-md active:scale-95 transition-all min-w-[44px] min-h-[44px] focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none"
+                    aria-label={`Call about ${service.name}`}
                   >
                     <Phone className="w-4.5 h-4.5" />
                   </a>
@@ -147,8 +147,8 @@ export default function Home() {
                     href={`https://api.whatsapp.com/send?phone=${phone.replace("+", "")}&text=Hi,%20I%20am%20interested%20in%20${service.name}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-emerald-500 hover:bg-emerald-600 text-white rounded-lg p-3 flex items-center justify-center shadow-md active:scale-95 transition-all"
-                    title={`WhatsApp inquiry about ${service.name}`}
+                    className="bg-emerald-500 hover:bg-emerald-600 text-white rounded-lg p-3 flex items-center justify-center shadow-md active:scale-95 transition-all min-w-[44px] min-h-[44px] focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:outline-none"
+                    aria-label={`WhatsApp inquiry about ${service.name}`}
                   >
                     <MessageSquare className="w-4.5 h-4.5 fill-current" />
                   </a>
@@ -161,7 +161,7 @@ export default function Home() {
         <div className="text-center mt-10">
           <Link
             href="/services"
-            className="inline-block bg-navy hover:bg-navy-light text-white text-xs font-bold px-6 py-3 rounded-full transition-all shadow-md"
+            className="inline-flex items-center justify-center bg-navy hover:bg-navy-light text-white text-xs md:text-sm font-bold px-6 py-3.5 rounded-full transition-all shadow-md min-h-[44px] focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none"
           >
             View All 10 Safety Services &rarr;
           </Link>
@@ -176,7 +176,7 @@ export default function Home() {
           </h2>
           <div className="bg-white border border-gray-100 p-6 md:p-8 rounded-3xl shadow-sm space-y-4">
             <p className="text-xs md:text-sm text-gray-700 leading-relaxed font-normal">
-              <strong>AJ Safe Net Solutions</strong>, led by Ajay, is a professional safety net and invisible grill installation company operating since 2019. Serving Vijayawada, Chennai, Bangalore, and Pune with 1000+ successfully completed projects and a 5.0-star customer rating. The company specializes in SS316 marine-grade invisible grills and UV-resistant HDPE pigeon safety nets. Known for same-day response, transparent pricing with no hidden charges, and a 3-5 year installation warranty. Contact: +91 99893 91930
+              <strong>AJ Safe Net Solutions</strong>, led by Ajay, is a professional safety net and invisible grill installation company operating since 2019. Serving Vijayawada, Hyderabad, Chennai, Bangalore, and Pune with 1000+ successfully completed projects and a 5.0-star customer rating. The company specializes in SS316 marine-grade invisible grills and UV-resistant HDPE pigeon safety nets. Known for same-day response, transparent pricing with no hidden charges, and a 3-5 year installation warranty. Contact: +91 8121488961
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xxs md:text-xs text-gray-600 border-t border-gray-100 pt-4 font-semibold">
               <div>
@@ -186,7 +186,7 @@ export default function Home() {
                 <strong>Established:</strong> 2019 (15+ Years Experience)
               </div>
               <div>
-                <strong>Primary Base:</strong> Vijayawada, Andhra Pradesh
+                <strong>Primary Base:</strong> Vijayawada / Hyderabad
               </div>
               <div>
                 <strong>Materials:</strong> SS316 Marine Grade, Garware UV-stabilized HDPE
@@ -204,11 +204,11 @@ export default function Home() {
           </span>
           
           <h2 className="text-2xl md:text-4xl font-bold font-sora text-navy leading-tight">
-            Vijayawada&apos;s Professional Safety Net & Invisible Grill Contractors
+            Professional Safety Net & Invisible Grill Contractors
           </h2>
           
           <p className="text-xs md:text-sm text-gray-600 leading-relaxed">
-            For over 5 years, AJ Safe Net Solutions has secured homes, high-rise balconies, stairwells, offices, and plumbing ducts from accidental fall risks and pigeon droppings. We serve Vijayawada, Chennai, Bangalore, and Pune with certified technicians and BIS-certified safety products.
+            For over 5 years, AJ Safe Net Solutions has secured homes, high-rise balconies, stairwells, offices, and plumbing ducts from accidental fall risks and pigeon droppings. We serve Vijayawada, Hyderabad, Chennai, Bangalore, and Pune with certified technicians and BIS-certified safety products.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
@@ -245,7 +245,7 @@ export default function Home() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {[
-            { step: "01", title: "Contact Us", desc: "Call or WhatsApp your balcony requirements to Owner Ajay (+91 99893 91930)." },
+            { step: "01", title: "Contact Us", desc: "Call or WhatsApp your balcony requirements to Owner Ajay (+91 8121488961)." },
             { step: "02", title: "Free Site Survey", desc: "Our local technicians visit your home to measure the exact balcony or window dimensions." },
             { step: "03", title: "Professional Mount", desc: "We drill SS hooks at 1-foot spacing, tension the UV-treated safety nets, and lock anchors." },
             { step: "04", title: "Clean Up & Handover", desc: "Our team vacuums the drilling dust, inspects the tension knots, and delivers the warranty card." }
@@ -279,7 +279,7 @@ export default function Home() {
           
           <Link
             href="/gallery"
-            className="text-xxs md:text-xs font-bold text-primary hover:underline transition-all mt-4 md:mt-0"
+            className="text-xxs md:text-xs font-bold text-primary hover:underline transition-all mt-4 md:mt-0 min-h-[44px] flex items-center"
           >
             View Full Gallery &rarr;
           </Link>
@@ -301,22 +301,22 @@ export default function Home() {
             Schedule Your Free Measurement Today!
           </h2>
           <p className="text-xs md:text-lg text-green-100 max-w-xl mx-auto font-medium">
-            Contact Owner Ajay directly on phone or WhatsApp. We serve Vijayawada, Chennai, Bangalore, and Pune with verified experts.
+            Contact Owner Ajay directly on phone or WhatsApp. We serve Vijayawada, Hyderabad, Chennai, Bangalore, and Pune with verified experts.
           </p>
           
           <div className="flex justify-center gap-4 flex-wrap pt-2">
             <a
               href={`tel:${phone}`}
-              className="bg-navy hover:bg-navy-light text-white font-bold py-3 px-8 rounded-full shadow-md text-xs md:text-sm hover:-translate-y-0.5 active:translate-y-0 transition-all cursor-pointer"
+              className="bg-navy hover:bg-navy-light text-white font-bold py-3.5 px-8 rounded-full shadow-md text-xs md:text-sm hover:-translate-y-0.5 active:translate-y-0 transition-all cursor-pointer min-h-[44px] flex items-center justify-center focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-none"
             >
-              Call +91 99893 91930
+              Call +91 8121488961
             </a>
             
             <a
               href={`https://api.whatsapp.com/send?phone=${phone.replace("+", "")}&text=Hi%20AJ%20Safe%20Net%20Solutions,%20please%20arrange%20a%20free%20site%20assessment.`}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white text-primary hover:bg-green-50 font-bold py-3 px-8 rounded-full shadow-md text-xs md:text-sm hover:-translate-y-0.5 active:translate-y-0 transition-all cursor-pointer"
+              className="bg-white text-primary hover:bg-green-50 font-bold py-3.5 px-8 rounded-full shadow-md text-xs md:text-sm hover:-translate-y-0.5 active:translate-y-0 transition-all cursor-pointer min-h-[44px] flex items-center justify-center focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none"
             >
               WhatsApp Us
             </a>
