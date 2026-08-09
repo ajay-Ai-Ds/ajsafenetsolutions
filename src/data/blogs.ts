@@ -616,7 +616,7 @@ export const blogs: BlogPost[] = [
       },
       {
         type: "paragraph",
-        content: "AJ Safe Net Solutions provides certified SS 316 invisible grill installations with a 10-year anti-rust warranty across Vijayawada, Hyderabad, Chennai, Bangalore, and Pune. Call +91 99893 91930 or +91 8121488961 for a free site measurement and sample evaluation."
+        content: "AJ Safe Net Solutions provides certified SS 316 invisible grill installations with a 10-year anti-rust warranty across Vijayawada, Hyderabad, Chennai, Bangalore, and Pune. Call +91 9989391930 for a free site measurement and sample evaluation."
       }
     ],
     faqs: [

@@ -27,7 +27,7 @@ export default function EnquiryForm({
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const ownerPhone = "+918121488961";
+  const ownerPhone = "+919989391930";
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -139,7 +139,7 @@ Message: ${formData.message || "Requesting quote & site measurement."}`;
             name="phone"
             value={formData.phone}
             onChange={handleChange}
-            placeholder="e.g. 8121488961"
+            placeholder="e.g. 9989391930"
             className={`w-full px-4 py-3 rounded-lg border text-base md:text-sm text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition-all ${
               errors.phone ? "border-red-500 bg-red-50/10" : "border-gray-300"
             }`}

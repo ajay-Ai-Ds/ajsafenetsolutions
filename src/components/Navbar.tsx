@@ -15,7 +15,7 @@ export default function Navbar() {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   
   const pathname = usePathname();
-  const phone = "+918121488961";
+  const phone = "+919989391930";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -161,7 +161,7 @@ export default function Navbar() {
               className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-bold py-2.5 px-5 rounded-full text-xs md:text-sm shadow-lg shadow-primary/20 hover:shadow-primary/30 transition-all cursor-pointer min-h-[44px] focus-visible:ring-2 focus-visible:ring-primary-dark focus-visible:outline-none"
             >
               <Phone className="w-4 h-4" />
-              +91 8121488961
+              +91 9989391930
             </a>
           </div>
 
@@ -240,7 +240,7 @@ export default function Navbar() {
               className="w-full flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-white font-bold py-3.5 rounded-full text-sm shadow-lg shadow-primary/20 min-h-[48px]"
             >
               <Phone className="w-4 h-4" />
-              Call Now: +91 8121488961
+              Call Now: +91 9989391930
             </a>
           </div>
         </div>

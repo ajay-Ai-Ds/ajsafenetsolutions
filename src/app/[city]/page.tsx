@@ -47,7 +47,7 @@ export default async function CityPage({ params }: Props) {
   const city = getCityBySlug(resolvedParams.city);
   if (!city) notFound();
 
-  const phone = "+918121488961";
+  const phone = "+919989391930";
   const whatsappText = `Hi, I am looking for safety net installation in ${city.name}. Please arrange a free assessment.`;
   const whatsappUrl = `https://api.whatsapp.com/send?phone=${phone.replace("+", "")}&text=${encodeURIComponent(whatsappText)}`;
 
@@ -122,7 +122,7 @@ export default async function CityPage({ params }: Props) {
                 className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-bold py-3.5 px-6 rounded-full shadow-lg text-xs md:text-sm transition-all min-h-[44px] focus-visible:ring-2 focus-visible:ring-primary-dark focus-visible:outline-none"
               >
                 <Phone className="w-4.5 h-4.5" />
-                Call +91 8121488961
+                Call +91 9989391930
               </a>
               <a
                 href={whatsappUrl}

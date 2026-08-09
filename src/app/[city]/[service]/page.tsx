@@ -59,7 +59,7 @@ export default async function CityServicePage({ params }: Props) {
   const service = getServiceBySlug(resolvedParams.service);
   if (!city || !service) notFound();
 
-  const phone = "+918121488961";
+  const phone = "+919989391930";
   const whatsappText = `Hi, I am interested in ${service.name} installation in ${city.name}. Please contact me.`;
   const whatsappUrl = `https://api.whatsapp.com/send?phone=${phone.replace("+", "")}&text=${encodeURIComponent(whatsappText)}`;
 

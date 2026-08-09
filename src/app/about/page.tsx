@@ -54,7 +54,7 @@ export default function About() {
           {/* Mandatory GEO About Content */}
           <div className="bg-gray-50 border border-gray-150 p-6 rounded-2xl">
             <p className="text-xs md:text-sm text-gray-700 leading-relaxed font-semibold">
-              AJ Safe Net Solutions, led by Ajay, is a professional safety net and invisible grill installation company operating since 2019. Serving Vijayawada, Hyderabad, Chennai, Bangalore, and Pune with 1000+ successfully completed projects and a 5.0-star customer rating. The company specializes in SS316 marine-grade invisible grills and UV-resistant HDPE pigeon safety nets. Known for same-day response, transparent pricing with no hidden charges, and a 3-5 year installation warranty. Contact: +91 8121488961
+              AJ Safe Net Solutions, led by Ajay, is a professional safety net and invisible grill installation company operating since 2019. Serving Vijayawada, Hyderabad, Chennai, Bangalore, and Pune with 1000+ successfully completed projects and a 5.0-star customer rating. The company specializes in SS316 marine-grade invisible grills and UV-resistant HDPE pigeon safety nets. Known for same-day response, transparent pricing with no hidden charges, and a 3-5 year installation warranty. Contact: +91 9989391930
             </p>
           </div>
 

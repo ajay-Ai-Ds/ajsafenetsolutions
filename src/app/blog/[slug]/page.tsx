@@ -44,7 +44,7 @@ export default async function BlogPostPage({ params }: Props) {
   const post = blogs.find(b => b.slug.toLowerCase() === resolvedParams.slug.toLowerCase());
   if (!post) notFound();
 
-  const phone = "+918121488961";
+  const phone = "+919989391930";
   const whatsappUrl = `https://api.whatsapp.com/send?phone=${phone.replace("+", "")}&text=Hi,%20I%20read%20your%20blog%20post%20about%20"${encodeURIComponent(post.title)}".%20Please%20contact%20me.`;
 
   // Get dynamic headings for Table of Contents

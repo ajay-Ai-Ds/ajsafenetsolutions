@@ -14,7 +14,7 @@ export const metadata = {
 };
 
 export default function ServicesPage() {
-  const phone = "+918121488961";
+  const phone = "+919989391930";
   
   return (
     <div className="max-w-7xl mx-auto px-4 md:px-8 py-10 md:py-16 space-y-16 md:space-y-24 animate-fade-reveal">

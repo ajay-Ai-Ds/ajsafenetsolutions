@@ -6,7 +6,7 @@ import { footerServiceLinks, footerCityLinks } from "@/data/navigation";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
-  const phone = "+918121488961";
+  const phone = "+919989391930";
   const email = "ajsafenetsolutions@gmail.com";
   
   return (

@@ -14,7 +14,7 @@ const GalleryGrid = dynamic(() => import("@/components/GalleryGrid"));
 const Testimonials = dynamic(() => import("@/components/Testimonials"));
 
 export default function Home() {
-  const phone = "+918121488961";
+  const phone = "+919989391930";
   const email = "ajsafenetsolutions@gmail.com";
   const globalFaqs = getGlobalFAQs();
   
@@ -176,7 +176,7 @@ export default function Home() {
           </h2>
           <div className="bg-white border border-gray-100 p-6 md:p-8 rounded-3xl shadow-sm space-y-4">
             <p className="text-xs md:text-sm text-gray-700 leading-relaxed font-normal">
-              <strong>AJ Safe Net Solutions</strong>, led by Ajay, is a professional safety net and invisible grill installation company operating since 2019. Serving Vijayawada, Hyderabad, Chennai, Bangalore, and Pune with 1000+ successfully completed projects and a 5.0-star customer rating. The company specializes in SS316 marine-grade invisible grills and UV-resistant HDPE pigeon safety nets. Known for same-day response, transparent pricing with no hidden charges, and a 3-5 year installation warranty. Contact: +91 8121488961
+              <strong>AJ Safe Net Solutions</strong>, led by Ajay, is a professional safety net and invisible grill installation company operating since 2019. Serving Vijayawada, Hyderabad, Chennai, Bangalore, and Pune with 1000+ successfully completed projects and a 5.0-star customer rating. The company specializes in SS316 marine-grade invisible grills and UV-resistant HDPE pigeon safety nets. Known for same-day response, transparent pricing with no hidden charges, and a 3-5 year installation warranty. Contact: +91 9989391930
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xxs md:text-xs text-gray-600 border-t border-gray-100 pt-4 font-semibold">
               <div>
@@ -245,7 +245,7 @@ export default function Home() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {[
-            { step: "01", title: "Contact Us", desc: "Call or WhatsApp your balcony requirements to Owner Ajay (+91 8121488961)." },
+            { step: "01", title: "Contact Us", desc: "Call or WhatsApp your balcony requirements to Owner Ajay (+91 9989391930)." },
             { step: "02", title: "Free Site Survey", desc: "Our local technicians visit your home to measure the exact balcony or window dimensions." },
             { step: "03", title: "Professional Mount", desc: "We drill SS hooks at 1-foot spacing, tension the UV-treated safety nets, and lock anchors." },
             { step: "04", title: "Clean Up & Handover", desc: "Our team vacuums the drilling dust, inspects the tension knots, and delivers the warranty card." }
@@ -309,7 +309,7 @@ export default function Home() {
               href={`tel:${phone}`}
               className="bg-navy hover:bg-navy-light text-white font-bold py-3.5 px-8 rounded-full shadow-md text-xs md:text-sm hover:-translate-y-0.5 active:translate-y-0 transition-all cursor-pointer min-h-[44px] flex items-center justify-center focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-none"
             >
-              Call +91 8121488961
+              Call +91 9989391930
             </a>
             
             <a
